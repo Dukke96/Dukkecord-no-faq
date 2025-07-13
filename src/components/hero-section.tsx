@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { BackgroundGradient } from "./background-gradient";
 
 export function HeroSection() {
   return (
@@ -47,8 +48,8 @@ export function HeroSection() {
           }}
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
-          Interact with AI to translate messages, summarize conversations, schedule
-          events, and more—all within Discord.
+          Interact with AI to translate messages, summarize conversations,
+          schedule events, and more—all within Discord.
         </motion.p>
         <motion.div
           initial={{
@@ -63,9 +64,13 @@ export function HeroSection() {
           }}
           className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
         >
-          <button className="w-60 transform rounded-lg cursor-pointer bg-primary px-6 py-2 font-medium text-primary-foreground transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90">
-            Try the Bot
-          </button>
+          <BackgroundGradient className="p-[0px] rounded-xl">
+            <a href="https://forms.gle/ATsnu2aoES5Ss2Vp9" target="_blank">
+              <button className="w-60 transform rounded-lg cursor-pointer bg-primary px-6 py-2 font-medium text-primary-foreground transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90">
+                Try Bot
+              </button>
+            </a>
+          </BackgroundGradient>
           <button className="w-60 transform rounded-lg cursor-pointer border border-border bg-background px-6 py-2 font-medium text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:bg-muted">
             Learn More
           </button>

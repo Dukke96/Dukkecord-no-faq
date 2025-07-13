@@ -12,6 +12,7 @@ import {
 } from "@/components/resizable-navbar";
 import { ModeToggle } from "@/components/theme-switcher";
 import { useState } from "react";
+import { BackgroundGradient } from "./background-gradient";
 
 const navItems = [
   { name: "Home", link: "#" },
@@ -37,7 +38,11 @@ export default function NavBar() {
           >
             <ModeToggle />
           </NavbarButton>
-          <NavbarButton variant="primary">Try Bot</NavbarButton>
+          <a href="https://forms.gle/HcYaYr26zMXpvPoG8" target="_blank">
+            <BackgroundGradient className="p-[0px] rounded-xl">
+              <NavbarButton variant="primary">Try Bot</NavbarButton>
+            </BackgroundGradient>
+          </a>
         </div>
       </NavBody>
 
@@ -69,13 +74,15 @@ export default function NavBar() {
             </a>
           ))}
           <div className="flex w-full flex-col gap-4">
-            <NavbarButton
-              onClick={() => setIsMobileMenuOpen(false)}
-              variant="primary"
-              className="w-full"
-            >
-              Try Bot
-            </NavbarButton>
+            <a href="https://forms.gle/HcYaYr26zMXpvPoG8" target="_blank">
+              <NavbarButton
+                onClick={() => setIsMobileMenuOpen(false)}
+                variant="primary"
+                className="w-full"
+              >
+                Try Bot
+              </NavbarButton>
+            </a>
           </div>
         </MobileNavMenu>
       </MobileNav>

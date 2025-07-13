@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import { BackgroundGradient } from "@/components/background-gradient";
 
 function CTATest() {
   return (
@@ -2151,29 +2153,32 @@ function CTATest() {
                 <h1 className="text-3xl font-bold lg:text-4xl break-all">
                   Enhace your productivity with our AI Bot
                 </h1>
-                <p className="mt-2">
+                <p className="mt-2 mb-4">
                   Start your 7-day free trial. No credit card required.
                 </p>
-                <Link
-                  href="/"
-                  className="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground h-11 group mt-4 rounded-[2rem] px-6"
-                >
-                  Try Bot
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1"
+                <BackgroundGradient className="p-[0px] rounded-full">
+                  <Link
+                    target="_blank"
+                    href="https://forms.gle/ATsnu2aoES5Ss2Vp9"
+                    className="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground h-11 group rounded-[2rem] px-6"
                   >
-                    <path d="m9 18 6-6-6-6"></path>
-                  </svg>
-                </Link>
+                    Try Bot
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1"
+                    >
+                      <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                  </Link>
+                </BackgroundGradient>
               </div>
               <div className="absolute inset-0 -z-10 rounded-full  bg-white opacity-40 blur-xl dark:bg-black"></div>
             </div>

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dukkedcord",
+  title: "Dukkecord",
   description: "Enhance your Discord experience with AI-powered tools",
 };
 
